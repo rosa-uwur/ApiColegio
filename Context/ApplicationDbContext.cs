@@ -8,6 +8,7 @@ namespace ApiColegio.Context
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
         {
+
         }
 
         public DbSet<Alumno> Alumnos { get; set;}
