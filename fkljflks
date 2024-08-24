@@ -1,0 +1,36 @@
+[33mcommit 8f00aaafefbf436c8647e86da4ffeed1acf9c457[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 119ef01 d00a817
+Author: rosa-uwur <rsmaldonadov@gmail.com>
+Date:   Sat Aug 24 12:23:34 2024 -0600
+
+    Merge branch 'main'
+
+[33mcommit 119ef0176ee0722bee7b4b0b21608abbe5e8134a[m
+Author: rosa-uwur <rsmaldonadov@gmail.com>
+Date:   Sat Aug 24 11:53:18 2024 -0600
+
+    Se agregan campos de maestros
+
+[33mcommit d00a8172a34764ae3d983f9e3c4485a0b6ce501c[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Rosa <90018945+rosa-uwur@users.noreply.github.com>
+Date:   Thu Jul 25 23:06:04 2024 -0600
+
+    Create README.md
+
+[33mcommit f2d15aa106c1cc55e141d06d69437937743ad10f[m
+Author: rosa-uwur <rsmaldonadov@gmail.com>
+Date:   Thu Jul 25 22:58:50 2024 -0600
+
+    prueba
+
+[33mcommit 9153f5f9f93e547a5e70cd074f73fb19e2995512[m
+Author: rosa-uwur <rsmaldonadov@gmail.com>
+Date:   Thu Jul 25 22:50:50 2024 -0600
+
+    Agregar archivos de proyecto.
+
+[33mcommit 8b6fb6b75749f5caaaf227b47fa432c676e469fb[m
+Author: rosa-uwur <rsmaldonadov@gmail.com>
+Date:   Thu Jul 25 22:50:48 2024 -0600
+
+    Agregar .gitattributes y .gitignore.
