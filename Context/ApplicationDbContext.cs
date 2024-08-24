@@ -13,6 +13,7 @@ namespace ApiColegio.Context
 
         public DbSet<Alumno> Alumnos { get; set;}
 
+        public DbSet<Maestro> Maestros { get; set;}
 
     }
 }
