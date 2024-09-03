@@ -15,5 +15,7 @@ namespace ApiColegio.Context
 
         public DbSet<Maestro> Maestros { get; set;}
 
+        public DbSet<Clase> Clases { get; set;}
+
     }
 }
