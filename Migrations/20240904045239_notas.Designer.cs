@@ -4,6 +4,7 @@ using ApiColegio.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiColegio.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240904045239_notas")]
+    partial class notas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,30 +63,6 @@ namespace ApiColegio.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Alumnos");
-                });
-
-            modelBuilder.Entity("ApiColegio.Models.Asistencia", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("alumnoId")
-                        .HasColumnType("int");
-
-                    b.Property<bool>("asistio")
-                        .HasColumnType("bit");
-
-                    b.Property<DateOnly>("fecha")
-                        .HasColumnType("date");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("alumnoId");
-
-                    b.ToTable("Asistencia");
                 });
 
             modelBuilder.Entity("ApiColegio.Models.Clase", b =>
@@ -184,17 +163,6 @@ namespace ApiColegio.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Notas");
-                });
-
-            modelBuilder.Entity("ApiColegio.Models.Asistencia", b =>
-                {
-                    b.HasOne("ApiColegio.Models.Alumno", "alumno")
-                        .WithMany()
-                        .HasForeignKey("alumnoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("alumno");
                 });
 #pragma warning restore 612, 618
         }
