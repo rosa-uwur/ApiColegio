@@ -185,6 +185,7 @@ namespace ApiColegio.Migrations
 
                     b.ToTable("Notas");
                 });
+<<<<<<< HEAD
 
             modelBuilder.Entity("ApiColegio.Models.Asistencia", b =>
                 {
@@ -196,6 +197,8 @@ namespace ApiColegio.Migrations
 
                     b.Navigation("alumno");
                 });
+=======
+>>>>>>> 3b70a0cda0be13282bda415599804b5faf402f2c
 #pragma warning restore 612, 618
         }
     }
