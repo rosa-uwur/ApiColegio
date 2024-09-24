@@ -16,11 +16,11 @@ namespace ApiColegio.Context
         public DbSet<Maestro> Maestros { get; set;}
 
         public DbSet<Clase> Clases { get; set;}
-        public DbSet<Nota> Notas { get; set;} 
-<<<<<<< HEAD
+        public DbSet<Nota> Notas { get; set;}
+        public DbSet<Anuncio> Anuncios { get; set; }
+
         public DbSet<ApiColegio.Models.Asistencia> Asistencia { get; set; } = default!;
-=======
->>>>>>> 3b70a0cda0be13282bda415599804b5faf402f2c
+
 
 
     }
