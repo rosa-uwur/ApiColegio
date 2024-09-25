@@ -20,8 +20,8 @@ namespace ApiColegio.Context
         public DbSet<Anuncio> Anuncios { get; set; }
 
         public DbSet<ApiColegio.Models.Asistencia> Asistencia { get; set; } = default!;
-
-
+        public DbSet<Foro> Foros { get; set; }
+        public DbSet<Comentario> Comentarios { get; set; }
 
     }
 }
